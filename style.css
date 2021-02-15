@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.starships-button {
+  padding: 20px;
+  font-size: 26px;
+  background-color: black;
+  color: rgba(229, 177, 58, 1);
+  cursor: pointer;
+  text-align: center;
+  margin: 20px 200px 50px 200px;
+}
+
+.starships {
+  display: grid;
+  margin: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 25px;
+  margin: 20px 200px 50px 200px;
+}
+
+.starships-button,
+.starship-title {
+  text-align: center;
+  margin-bottom: 0.5em;
+  white-space: nowrap;
+  color: rgba(229, 177, 58, 1);
+}
+
+.starships-button,
+.starship {
+  cursor: pointer;
+  color: rgba(229, 177, 58, 1);
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+.starship:hover,
+.starship:focus,
+.starships-button:hover,
+.starships-button:focus {
+  box-shadow: 0 0 0px 2px rgb(229, 177, 58) inset;
+}
+
+span {
+  line-height: 1.4em;
+}
+
+.starship-title,
+span {
+  text-transform: capitalize;
+}
+
+.starship-text {
+  color: #f2d48f;
+}
+
+.hidden {
+  display: none;
+}
+
+.films {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.film {
+  color: rgba(229, 177, 58, 1);
+  border-radius: 10px;
+  padding: 0.5em;
+  box-shadow: 0 0 0px 2px rgb(229, 177, 58) inset;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.film-title {
+  text-align: center;
+  margin-bottom: 0.5em;
+  white-space: nowrap;
+  color: rgba(229, 177, 58, 1);
+  text-transform: capitalize;
+}
+
+.film-text {
+  color: #f2d48f;
+}
+
+.overlay {
+  filter: blur(5px);
+}
